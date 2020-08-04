@@ -32,6 +32,5 @@ decoder_1	M10 (.Z(z_n_f),.count(c1));
 buf3	M11 (.Z(z_n_f),.C(c1),.CLK(clk),.ZE(z_e_b_f),.E(e_b_f),.AS(a_s_d_f),.BS(b_s_d_f),.ZS(z_s_b_f),.Z1(z_n_e),.ZS1(z_s_s),.C1(c_e),.AS1(a_s_e),.BS1(b_s_e),.E1(e_e),.ZE1(z_e_e));
 barrelshifter_1	M12  (.Z(z_n_e),.ZE(z_e_e),.c(c_e),.AS(a_s_e),.BS(b_s_e),.E(e_e),.ZN(z_n_e_e),.ZEN(z_e_n_e));
 buf4	M13 (.ZN(z_n_e_e),.ZEN(z_e_n_e),.ZS(z_s_s),.CLK(clk),.ZS1(z_s_s_s),.ZEN1(z_e_n_e_e),.ZN1(z_n_e_e_e));
-combine	M14 (.ZN(z_n_e_e_e),.ZEN(z_e_n_e_e),.ZS(z_s_s_s),.C(c2));
-buf5	M15 (.C(c2),.CLK(clk),.C1(c));
+combine	M14 (.ZN(z_n_e_e_e),.ZEN(z_e_n_e_e),.ZS(z_s_s_s),.C(c));
 endmodule
